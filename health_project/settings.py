@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rd2$pucg(h7%@mwe8c(2rbu(l)ncii5n*7nc)@%5bza3f32c91'
+SECRET_KEY = 'secret-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -83,7 +83,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'CLIENT': {
-            "host":"mongodb+srv://solimpico:Galaxys3@cluster0.tpq4zig.mongodb.net/?retryWrites=true&w=majority",
+            "host":"mongodbUri",
             "name":"healthDB",
             "authMechanism":"SCRAM-SHA-1"
         }
